@@ -37,6 +37,12 @@ header {
       &:hover {
         font-style: italic;
       }
+
+      .works__content {
+        padding-top: 70px;
+        grid-column: 2/-1;
+        display: none;
+      }
     }
 
 
