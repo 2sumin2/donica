@@ -23,25 +23,42 @@ header {
   .works__header {
     @extend %grid;
     padding-bottom: 10px;
-    font-size: 15px;
+    font-size: $tiny;
   }
 
   .works__list {
     .works__work {
-      cursor: pointer;
-      @extend %grid;
       border-top: 1px solid $black;
-      font-size: 25px;
       padding: 17px 0;
+      display: flex;
+      flex-direction: column;
 
-      &:hover {
-        font-style: italic;
+
+      .works__title {
+        cursor: pointer;
+        font-size: 25px;
+        @extend %grid;
+
+        &:hover {
+          font-style: italic;
+        }
       }
 
       .works__content {
         padding-top: 70px;
         grid-column: 2/-1;
-        display: none;
+        width: 80%;
+        align-self: center;
+        font-size: 23px;
+        line-height: 1.5;
+
+        .works__content__des {
+          margin-bottom: 50px;
+        }
+
+        .works__content__about {
+          font-size: $tiny;
+        }
       }
     }
 
@@ -65,7 +82,7 @@ header {
   line-height: 1.5;
 
   span {
-    font-size: 15px;
+    font-size: $tiny;
   }
 }
 
