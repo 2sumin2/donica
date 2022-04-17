@@ -1,12 +1,41 @@
-body {
-  background-color: #ffffff;
-  color: #444444;
-  font-family: 'Cardo',
-    serif;
-  width: 100%;
-  margin: 20px;
+@import "_variables";
+@import "_elements";
+
+* {
+  box-sizing: border-box;
 }
 
-h1 {
+body {
+  background-color: #ffffff;
+  color: $black;
+  font-family: 'Cardo',
+    serif;
+  padding: 40px;
+}
+
+header {
   font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 165px;
+}
+
+.works {
+  .works__header {
+    @extend %grid;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .works__list {
+    .works__work {
+      @extend %grid;
+      border-top: 1px solid $black;
+      font-size: 25px;
+      padding: 17px 0;
+    }
+
+
+  }
+
+  margin-bottom: 80px;
 }
