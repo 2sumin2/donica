@@ -28,14 +28,45 @@ header {
 
   .works__list {
     .works__work {
+      cursor: pointer;
       @extend %grid;
       border-top: 1px solid $black;
       font-size: 25px;
       padding: 17px 0;
+
+      &:hover {
+        font-style: italic;
+      }
     }
 
 
   }
 
   margin-bottom: 80px;
+}
+
+.cv {
+  margin-bottom: 50px;
+}
+
+.about {
+  margin-bottom: 35px;
+}
+
+.cv,
+.about {
+  font-size: 28px;
+  line-height: 1.5;
+
+  span {
+    font-size: 15px;
+  }
+}
+
+a {
+  color: $black;
+
+  &:hover {
+    font-style: italic;
+  }
 }
