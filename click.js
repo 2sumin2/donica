@@ -1,6 +1,6 @@
 const title = document.body.querySelectorAll('.works__title');
 const content = document.body.querySelectorAll('.works__content');
-const images = document.body.querySelectorAll('img');
+const images = document.body.querySelectorAll('.eye');
 
 function showContent(event) {
     event.target.parentElement.parentElement.querySelector(".works__content")?.classList.toggle("hidden");

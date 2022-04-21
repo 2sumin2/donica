@@ -58,6 +58,16 @@ header {
 
         .works__content__about {
           font-size: $tiny;
+          margin-bottom: 50px;
+        }
+
+        .images {
+          width: 100%;
+          margin: 20px 0;
+
+          img {
+            width: 100%;
+          }
         }
       }
     }
@@ -92,6 +102,36 @@ a {
   &:hover {
     font-style: italic;
   }
+}
+
+
+
+img[data-imgNum="0"] {
+  z-index: calc(20 - 0);
+}
+
+img[data-imgNum="1"] {
+  z-index: calc(20 - 1);
+}
+
+img[data-imgNum="2"] {
+  z-index: calc(20 - 2);
+}
+
+img[data-imgNum="3"] {
+  z-index: calc(20 - 3);
+}
+
+img[data-imgNum="4"] {
+  z-index: calc(20 - 4);
+}
+
+img[data-imgNum="5"] {
+  z-index: calc(20 - 5);
+}
+
+img[data-imgNum="6"] {
+  z-index: calc(20 - 6);
 }
 
 .hidden {
